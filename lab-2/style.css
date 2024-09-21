@@ -105,3 +105,39 @@ body {
     width: 60px;
     clip-path: circle();
 }
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 15px 0 15px 15px;
+}
+
+.project-card {
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    background-color: white;
+    padding: 15px 15px 15px 15px;
+    border-radius: 10px;
+    border-left: 6px rgb(192, 5, 5) solid;
+    box-shadow: 1px 1px 3px rgb(184, 178, 178);
+}
+
+
+.project-card p, .trends-items p{
+    margin: 0px;
+}
+
+.project-card-content > p:first-child {
+    font-weight: 700;
+}
+
+.project-card-content > p:nth-child(2n) {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.project-card-icons {
+    justify-self: end;
+}
