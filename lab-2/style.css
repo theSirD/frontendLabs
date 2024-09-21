@@ -5,7 +5,6 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
-
 #sidebar { 
     display: grid;
     grid-template-rows: 0.1fr 0.4fr;
@@ -17,7 +16,6 @@ body {
     background-color: rgb(46, 164, 237);
 }
 
-
 .sidebar-middle ul {
     display: grid;
     grid-template-rows: repeat(4, 6fr);
@@ -25,5 +23,38 @@ body {
     list-style-type: none;
     padding-left: 0px;
     margin: 0px;
-    
+}
+
+.header {
+    padding: 20px 50px 25px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-form > input {
+    border: 1px solid rgb(229, 226, 226);
+    border-radius: 10px;
+    background-color: rgb(229, 226, 226);
+    flex-grow: 0;
+    flex-shrink: 1;
+    width: 600px;
+    height: 20px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle; 
+    clip-path: circle();
 }
