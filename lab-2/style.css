@@ -58,3 +58,50 @@ body {
     vertical-align: middle; 
     clip-path: circle();
 }
+
+.header-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 15px 50px;
+}
+
+.greetings {
+    display: flex;
+    gap: 15px;
+}
+
+.greetings-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.small-text {
+    font-size:10px;
+}
+
+.header-2-buttons {
+    display: flex;
+    gap: 20px;
+   
+}
+
+.header-2-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 25px;
+    width: 60px;
+    font-size: smaller;
+    background-color: rgb(46, 164, 237);
+    padding: 5px 10px 5px 10px;
+    color: white;
+    border-radius: 30px;
+}
+
+.header-avatar {
+    height: 60px;
+    width: 60px;
+    clip-path: circle();
+}
