@@ -38,6 +38,7 @@ header {
   grid-row: 1/2;
   grid-column: 2 / span 3;
 }
+
 .header-1 {
   grid-row: 1/2;
   grid-column: 2 / span 3;
@@ -182,6 +183,7 @@ header {
   grid-template-rows: 1fr 0.1fr 1fr;
   padding-top: 15px;
   padding-bottom: 15px;
+  gap: 10px;
 }
 
 .main-side-info > * {
@@ -207,6 +209,12 @@ header {
 
 .trends-items p {
   font-size: 10px;
+}
+
+.graphics,
+.quote,
+.code-snippet {
+  background-color: white;
 }
 
 .footer {
