@@ -60,7 +60,7 @@ header {
   gap: 20px;
 }
 
-.header-form > input {
+.header-top__header-form > input {
   border: 1px solid rgb(229, 226, 226);
   border-radius: 10px;
   background-color: rgb(229, 226, 226);
@@ -249,7 +249,7 @@ header {
   margin-bottom: 15px;
 }
 
-.footer__ad .footer__ad-link{
+.footer__ad .footer__ad-link {
   display: inline-block;
   padding: 10px 20px;
   font-size: 16px;
