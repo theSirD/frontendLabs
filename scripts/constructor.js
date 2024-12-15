@@ -44,7 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
     tableContainer.appendChild(table);
   });
 
-  
   saveButton.addEventListener("click", () => {
     const formData = new FormData(form);
     const settings = {
@@ -53,9 +52,15 @@ document.addEventListener("DOMContentLoaded", () => {
       language: formData.get("language"),
     };
     localStorage.setItem("tableSettings", JSON.stringify(settings));
-    alert("Настройки сохранены!");
-  });
 
+    // Использование библиотеки SweetAlert2 для отображения уведомления о сохранении
+    Swal.fire({
+      title: "Настройки сохранены!", // Заголовок всплывающего окна
+      icon: "success", // Иконка успеха
+      confirmButtonText: "Отлично", // Текст на кнопке подтверждения
+      confirmButtonColor: "#3498db", // Цвет кнопки подтверждения
+    });
+  });
 
   loadButton.addEventListener("click", () => {
     const savedSettings = localStorage.getItem("tableSettings");
@@ -64,9 +69,22 @@ document.addEventListener("DOMContentLoaded", () => {
       form.days.value = days;
       form.lessons.value = lessons;
       form.language.value = language;
-      alert("Настройки загружены!");
+
+      // Использование библиотеки SweetAlert2 для уведомления о загруженных настройках
+      Swal.fire({
+        title: "Настройки загружены!!", // Заголовок всплывающего окна
+        icon: "success", // Иконка успеха
+        confirmButtonText: "Отлично", // Текст на кнопке подтверждения
+        confirmButtonColor: "#3498db", // Цвет кнопки подтверждения
+      });
     } else {
-      alert("Настройки не найдены!");
+      // В случае отсутствия настроек, выводим уведомление об ошибке
+      Swal.fire({
+        title: "Настройки не найдены!!", // Заголовок уведомления
+        icon: "error", // Иконка ошибки
+        confirmButtonText: "Отлично", // Текст на кнопке подтверждения
+        confirmButtonColor: "#e74c3c", // Цвет кнопки подтверждения (красный для ошибки)
+      });
     }
   });
 });

@@ -47,3 +47,4 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const getRandomFilter = () => (Math.random() > 0.5 ? (item) => item.id >= 50 : (item) => item.id < 50);
+
