@@ -30,6 +30,14 @@ body {
   color: whitesmoke;
 }
 
+.sidebar__link:hover {
+  text-decoration: underline;
+}
+
+.sidebar__link--active {
+    color: rgb(104, 227, 114)
+}
+
 .sidebar__middle ul {
   display: grid;
   grid-template-rows: repeat(4, 6fr);
