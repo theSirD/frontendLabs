@@ -8,6 +8,7 @@
     <title>Панель управления проектами</title>
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <script src="scripts/fetch_data.js" defer></script>
 </head>
 <body>
     <div class="grid-container">
@@ -51,107 +52,24 @@
                         <a class="sidebar__link" href="pages/projects.html">Проекты</a>
                     </li>
                     <li>
-                        <a class="header__link" href="pages/trends.html">Тренды</a>
+                        <a class="sidebar__link" href="pages/trends.html">Тренды</a>
                     </li>
                     </li>
                     <li>
-                        <a class="header__link" href="pages/profile.html">Профиль</a>
+                        <a class="sidebar__link" href="pages/profile.html">Профиль</a>
                     </li>
                     <li>
-                        <a class="header__link" href="pages/notificaitons.html">Уведомления</a>
+                        <a class="sidebar__link" href="pages/notificaitons.html">Уведомления</a>
                     </li>
                     <li>
-                        <a class="header__link" href="pages/constructor.html">Конструктор</a>
+                        <a class="sidebar__link" href="pages/constructor.html">Конструктор</a>
                     </li>
                 </ul>
             </div>
         </nav>
         <main class="main-container">
             <section class="projects">
-                <article class="project-card">
-                    <div class="project-card__content">
-                        <p>Проект 1</p>
-                        <p>Sed tembus ut lacus ut scelerisque
-                        suspendisse sollicitudin nibh erat.</p>
-                    </div>
-                    <div class="project-card__icon">
-                        <span class="material-icons-outlined header-search-icon">search</span>
-                        <span class="material-icons-outlined header-search-icon">search</span>
-                        <span class="material-icons-outlined header-search-icon">search</span>
-                    </div>
-                </article> 
-                <article class="project-card">
-                    <div class="project-card__content">
-                        <p>Проект 2</p>
-                        <p>Sed tembus ut lacus ut scelerisque
-                        suspendisse sollicitudin nibh erat.</p>
-                    </div>
-                    <div class="project-card__icon">
-                        <span class="material-icons-outlined header-search-icon">search</span>
-                        <span class="material-icons-outlined header-search-icon">search</span>
-                        <span class="material-icons-outlined header-search-icon">search</span>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <div class="project-card__content">
-                        <p>Проект 3</p>
-                        <p>Sed tembus ut lacus ut scelerisque
-                        suspendisse sollicitudin nibh erat.</p>
-                    </div>
-                    <div class="project-card__icon">
-                        <span class="material-icons-outlined header-search-icon">search</span>
-                        <span class="material-icons-outlined header-search-icon">search</span>
-                        <span class="material-icons-outlined header-search-icon">search</span>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <div class="project-card__content">
-                        <p>Проект 3</p>
-                        <p>Sed tembus ut lacus ut scelerisque
-                        suspendisse sollicitudin nibh erat.</p>
-                    </div>
-                    <div class="project-card__icon">
-                        <span class="material-icons-outlined header-search-icon">search</span>
-                        <span class="material-icons-outlined header-search-icon">search</span>
-                        <span class="material-icons-outlined header-search-icon">search</span>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <div class="project-card__content">
-                        <p>Проект 3</p>
-                        <p>Sed tembus ut lacus ut scelerisque
-                        suspendisse sollicitudin nibh erat.</p>
-                    </div>
-                    <div class="project-card__icon">
-                        <span class="material-icons-outlined header-search-icon">search</span>
-                        <span class="material-icons-outlined header-search-icon">search</span>
-                        <span class="material-icons-outlined header-search-icon">search</span>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <div class="project-card__content">
-                        <p>Проект 3</p>
-                        <p>Sed tembus ut lacus ut scelerisque
-                        suspendisse sollicitudin nibh erat.</p>
-                    </div>
-                    <div class="project-card__icon">
-                        <span class="material-icons-outlined header-search-icon">search</span>
-                        <span class="material-icons-outlined header-search-icon">search</span>
-                        <span class="material-icons-outlined header-search-icon">search</span>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <div class="project-card__content">
-                        <p>Проект 3</p>
-                        <p>Sed tembus ut lacus ut scelerisque
-                        suspendisse sollicitudin nibh erat.</p>
-                    </div>
-                    <div class="project-card__icon">
-                        <span class="material-icons-outlined header-search-icon">search</span>
-                        <span class="material-icons-outlined header-search-icon">search</span>
-                        <span class="material-icons-outlined header-search-icon">search</span>
-                    </div>
-                </article>
+                <div class="preloader"></div>
             </section>
             <aside class="main-side-info">
                 <section class="trends">
