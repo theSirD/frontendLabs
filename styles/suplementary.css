@@ -24,6 +24,10 @@ body {
   text-decoration: underline;
 }
 
+.header__link--active {
+    color: rgb(104, 227, 114)
+}
+
 .main {
   padding: 2rem;
 }
