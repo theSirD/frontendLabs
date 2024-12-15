@@ -1,0 +1,48 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto 2rem;
+}
+
+.form__label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.form__input,
+.form__select,
+.form__button {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.form__button {
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.form__button:hover {
+  background-color: #0056b3;
+}
+
+.table-container {
+  margin-top: 2rem;
+  overflow-x: auto;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th,
+.table-container td {
+  border: 1px solid #333;
+  padding: 0.5rem;
+  text-align: center;
+}
