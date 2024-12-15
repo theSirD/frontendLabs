@@ -1,3 +1,41 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.header {
+  background-color: rgb(46, 164, 237);;
+  padding: 1rem;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header__link {
+  color: white;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  text-decoration: underline;
+}
+
+.header__link--active {
+    color: rgb(104, 227, 114)
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -45,4 +83,14 @@
   border: 1px solid #333;
   padding: 0.5rem;
   text-align: center;
+}
+
+.footer {
+  background-color: rgb(46, 164, 237);;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
