@@ -151,7 +151,17 @@ header {
   padding-right: 15px;
 }
 
-.projects {
+.projects.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+  max-height: 1000px;
+  padding: 15px;
+  position: relative;
+}
+
+.projects.loaded {
   display: grid;
   grid-template-columns: minmax(250px, 1fr) minmax(250px, 1fr);
   grid-template-rows: 150px 150px;
@@ -278,10 +288,9 @@ header {
 }
 
 .preloader {
-  display: none;
+  display: none; 
   width: 50px;
   height: 50px;
-  margin: 20px auto;
   border: 6px solid rgba(0, 0, 0, 0.1);
   border-top-color: #3498db;
   border-radius: 50%;

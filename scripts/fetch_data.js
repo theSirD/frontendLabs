@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const preloader = document.querySelector('.preloader');
 
     const renderProjects = (projects) => {
-        projectsContainer.innerHTML = '';
         projects.forEach((project) => {
             const projectCard = document.createElement('article');
             projectCard.className = 'project-card';
@@ -22,15 +21,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const loadProjects = async () => {
         try {
-            preloader.style.display = 'block';
+            projectsContainer.classList.add('loading');
+            projectsContainer.classList.remove('loaded');
 
-            await new Promise(resolve => setTimeout(resolve, 4000));
+            preloader.style.display = 'block';
+            await new Promise((resolve) => setTimeout(resolve, 4000));
 
             const response = await fetch('https://jsonplaceholder.typicode.com/posts');
             if (!response.ok) throw new Error('Ошибка сети');
+
             const data = await response.json();
             const filteredData = data.filter(getRandomFilter());
             renderProjects(filteredData);
+
+            projectsContainer.classList.remove('loading');
+            projectsContainer.classList.add('loaded');
         } catch (error) {
             projectsContainer.innerHTML = `<div class="error">Что-то пошло не так: ${error.message}</div>`;
         } finally {
