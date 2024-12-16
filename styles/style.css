@@ -112,6 +112,9 @@ header {
   gap: 15px;
 }
 
+.main-side-info h2 {
+  margin-top: 0px;
+}
 .header-bottom__greetings-text {
   display: flex;
   flex-direction: column;
@@ -223,7 +226,7 @@ header {
 }
 .trends {
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   background-color: white;
 }
 
