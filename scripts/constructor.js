@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
       Swal.fire({
         title: "Настройки не найдены!!", // Заголовок уведомления
         icon: "error", // Иконка ошибки
-        confirmButtonText: "Отлично", // Текст на кнопке подтверждения
+        confirmButtonText: "Ок", // Текст на кнопке подтверждения
         confirmButtonColor: "#e74c3c", // Цвет кнопки подтверждения (красный для ошибки)
       });
     }
