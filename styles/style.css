@@ -217,6 +217,7 @@ header {
   padding-top: 15px;
   padding-bottom: 15px;
   gap: 10px;
+  max-height: 800px;
 }
 
 .main-side-info > * {
